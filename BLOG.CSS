@@ -1,0 +1,98 @@
+ * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: black;
+      padding: 2rem;
+    }
+
+    .blog-section {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1rem;
+    }
+
+    .blog-card {
+      background: black;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: black;
+      display: flex;
+      flex-direction: column;
+      transition: transform 1s ease;
+    }
+
+    .blog-card:hover {
+      transform: translateY(-20px);
+    }
+
+    .blog-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 1rem;
+      flex-grow: 1;
+    }
+
+    .post-time {
+      display: flow-root;
+      font-size: 0.9rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .post-title {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .post-desc {
+      font-size: 0.95rem;
+      color: whitesmoke;
+    }
+
+    .card-footer {
+      display: flex;
+      justify-content: space-around;
+      text-align: center;
+      padding: 0.8rem 0;
+      color: black;
+      font-size: 0.9rem;
+    }
+
+    .card-footer div strong {
+      display: block;
+      font-size: 1.2rem;
+    }
+
+    /* Footer colors */
+    .blue-footer {
+      background-color: #2196f3;
+    }
+
+    .purple-footer {
+      background-color: #9c27b0;
+    }
+
+    .green-footer {
+      background-color: #4caf50;
+    }
+
+    /* Time label colors */
+    .blue, .purple, .green {
+      color: white;
+    }
+    @media (max-width: 768px) {
+      .post-title {
+        font-size: 1.3rem;
+      }
+      .post-desc {
+        font-size: 0.9rem;
+      }
+    }
